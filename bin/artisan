@@ -1,0 +1,13 @@
+#!/usr/bin/env php
+<?php
+
+require __DIR__ . '/../vendor/autoload.php';
+
+use Artisan\Cli\Application;
+
+try {
+    $app = new Application();
+    $app->run();
+} catch (Throwable $t) {
+    echo "ERROR: ".$t->getMessage().PHP_EOL;
+}
