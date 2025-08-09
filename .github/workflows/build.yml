@@ -1,7 +1,9 @@
 name: Build PHAR
 
 on:
-  push: { }
+  push:
+    tags:
+      - 'v*.*.*'
 
 jobs:
   build:

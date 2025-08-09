@@ -11,6 +11,13 @@
   "bin": [
     "bin/artisan"
   ],
+  "scripts": {
+    "build": [
+      "box compile",
+      "chmod +x artisan.phar",
+      "php src/remember.php"
+    ]
+  },
   "require": {
     "php": ">=8.3",
     "symfony/console": "^7.3",

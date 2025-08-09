@@ -17,9 +17,9 @@ After this, you can run the CLI using the artisan command from anywhere in your 
 artisan new <project-folder> [--version=major.minor] [--dev] [--with-users]
 ```
 * `project-folder`: Name of the folder where the new project will be created.
-* `--version`: (Optional) Specify a version of the starter to install.
+* `--ver`: (Optional) Specify a version of the starter to install.
 * `--dev`: Install the latest development version.
-* `--with-users`: Use the Artisan package with pre-installed Account management features.
+* `--with-users`: Add pre-installed Account management features.
 
 More commands and extensions will be added in future releases.
 

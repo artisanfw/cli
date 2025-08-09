@@ -13,3 +13,4 @@ vendor/
 logs/
 *.log
 .Identifier
+artisan.phar

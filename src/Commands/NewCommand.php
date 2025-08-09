@@ -29,7 +29,7 @@ class NewCommand extends Command
                 'The folder name where the project will be created'
             )
             ->addOption(
-                'version',
+                'ver',
                 null,
                 InputOption::VALUE_REQUIRED,
                 'Version of the starter to install (e.g. 1.0.0)'
@@ -51,7 +51,7 @@ class NewCommand extends Command
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $folder      = $input->getArgument('folder');
-        $version     = $input->getOption('version');
+        $version     = $input->getOption('ver');
         $isDev       = $input->getOption('dev');
         $withUsers   = $input->getOption('with-users');
 
