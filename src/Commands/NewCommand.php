@@ -77,7 +77,7 @@ class NewCommand extends Command
 
     private function getComposerCommand(
         string $folder,
-        string $version,
+        ?string $version,
         bool $isDev,
         bool $withUsers
     ): array {
