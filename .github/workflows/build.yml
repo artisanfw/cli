@@ -1,8 +1,7 @@
 name: Build PHAR
 
 on:
-  on:
-    push: { }
+  push: { }
 
 jobs:
   build:
