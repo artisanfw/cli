@@ -1,0 +1,7 @@
+{
+  "main": "bin/artisan",
+  "output": "artisan.phar",
+  "chmod": "0755",
+  "compression": "GZ",
+  "stub": true
+}
