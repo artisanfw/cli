@@ -6,8 +6,8 @@ To install the Artisan CLI globally, simply download the latest PHAR release, ma
 
 ## Ubuntu
 ```bash
-curl -LO https://github.com/artisanfw/cli/releases/latest/download/artisan.phar
-chmod +x artisan.phar
+curl -LO https://github.com/artisanfw/cli/releases/latest/download/artisan.phar && \
+chmod +x artisan.phar && \
 sudo mv artisan.phar /usr/local/bin/artisan
 ```
 After this, you can run the CLI using the artisan command from anywhere in your terminal.
