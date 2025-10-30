@@ -26,7 +26,7 @@ class Application extends BaseApplication
   / ____ \| |  | |_| \__ \ (_| | | | |
  /_/    \_\_|   \__|_|___/\__,_|_| |_|".PHP_EOL.'               Artisan Framework CLI (Global)';
 
-        parent::__construct($artisan, '0.1.0');
+        parent::__construct($artisan, '0.1.1');
 
         $this->add(new NewCommand());
         $this->add(new SelfUpdateCommand());
