@@ -14,7 +14,6 @@ use Symfony\Component\Console\Output\OutputInterface;
 
 class NewCommand extends Command
 {
-    protected static $defaultName = 'new';
     protected static $defaultDescription = 'Create a new Artisan Framework project';
 
     /** @var IProject[] */
@@ -22,20 +21,23 @@ class NewCommand extends Command
 
     public function __construct()
     {
-        parent::__construct();
         $this->registerProjectTypes();
+        parent::__construct('new');
     }
 
     protected function configure(): void
     {
+        $types = implode(', ', array_keys($this->projectTypes));
+
         $this
-            ->setDescription(self::$defaultDescription)
+            ->setDescription(self::$defaultDescription . " (Available types: $types)")
             ->addArgument('type', InputArgument::REQUIRED, 'Type of project (backend, spa, etc.)')
             ->addArgument('folder', InputArgument::REQUIRED, 'Folder name where the project will be created')
             ->addOption('ver', null, InputOption::VALUE_REQUIRED, 'Version to install (e.g. 1.0.0)')
             ->addOption('dev', 'd', InputOption::VALUE_NONE, 'Install latest dev version')
             ->addOption('with-users', 'u', InputOption::VALUE_NONE, 'Include user module (only for backend)');
     }
+
 
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
