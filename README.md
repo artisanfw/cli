@@ -14,8 +14,9 @@ After this, you can run the CLI using the artisan command from anywhere in your 
 
 **Usage:**
 ```bash
-artisan new <project-folder> [--version=major.minor] [--dev] [--with-users]
+artisan new <project> <project-folder> [--version=major.minor] [--dev] [--with-users]
 ```
+* `project`: Available projects: backend, spa
 * `project-folder`: Name of the folder where the new project will be created.
 * `--ver`: (Optional) Specify a version of the starter to install.
 * `--dev`: Install the latest development version.
